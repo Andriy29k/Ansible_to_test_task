@@ -1,0 +1,4 @@
+- name: Copy TLS for Dev Stage
+  copy:
+    src: tls
+    dest: /home/{{user}}/app

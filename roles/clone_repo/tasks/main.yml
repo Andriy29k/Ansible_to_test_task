@@ -1,0 +1,9 @@
+- name: Clone repo with Dockerfiles
+  ansible.builtin.git:
+    repo: "https://github.com/Andriy29k/DevOps_Test_Task.git"
+    dest: "/home/{{ user }}/app"
+    version: "dev"
+    clone: yes
+    update: yes
+    force: yes
+  become: true

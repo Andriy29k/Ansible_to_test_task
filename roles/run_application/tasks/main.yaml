@@ -1,0 +1,5 @@
+- name: Run run_application
+  become: true
+  shell: | 
+    cd /home/{{ user }}/app
+    docker compose up -d --build

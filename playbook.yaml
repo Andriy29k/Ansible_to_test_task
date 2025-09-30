@@ -1,0 +1,10 @@
+- name: Install Docker
+  hosts: 
+    - machine
+  roles: 
+    - install_docker
+    - copy_tls
+    - clone_repo
+    - run_application
+  become: true
+
