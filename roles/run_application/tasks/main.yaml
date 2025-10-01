@@ -2,4 +2,4 @@
   become: true
   shell: | 
     cd /home/{{ user }}/app
-    AUTH_ENTRY="{{ AUTH_ENTRY }}" docker compose -f docker-compose.yml up -d --build
+    NGINX_AUTH_ENTRY="{{ NGINX_AUTH_ENTRY }}" docker compose -f docker-compose.yml up -d --build
