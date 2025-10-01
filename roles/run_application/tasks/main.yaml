@@ -2,4 +2,4 @@
   become: true
   shell: | 
     cd /home/{{ user }}/app
-    docker compose -f docker-compose.dev.yml  up -d --build
+    docker compose -f docker-compose.dev.yml -f docker-compose.nginx.yml  up -d --build
